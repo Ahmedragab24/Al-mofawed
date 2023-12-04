@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Power</title>
+
+    <!-- ===================================  FAVICON  ================================== -->
+    <link rel="shortcut icon" href="./assest/img/logo.png" type="image/x-icon">
+
+    <!-- ===================================  REMIX ICONS  ================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/remixicon.css">
+
+    <!-- ===================================  Font awesome  ================================== -->
+    <script src="https://kit.fontawesome.com/e29ee4bc00.js" crossorigin="anonymous"></script>
+
+    <!-- =================================== Bootstrap CSS ====================================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ===================================  SWIPER CSS  ================================== -->
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css">
+
+    <!-- ===================================  css  ================================== -->
+    <link rel="stylesheet" href="./assest/css/style.css">
+    
+</head>
+<body>
+
+    <!-- ===================================  HEHEADER   ================================== -->
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="#home"><img src="./assest/img/logo.png" alt="" class="nav__logo-img"></a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link menu__home">Home</a>
+                    </li>
+                    <li class="nav__item dropdown">
+                        <a href="#about" class="nav__link-but dropdown-toggle menu__about" role="button" data-bs-toggle="dropdown">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item "><a class="nav__link menu__company" href="#about">About</a></li>
+    
+                            <li class="dropdown-item "><a class="nav__link menu__mission" href="">our mission</a></li>
+                            <li class="dropdown-item "><a class="nav__link menu__vision" href="">our Vision</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link menu__services">Services</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./contact.html" class="nav__link menu__contact">Contact Us</a>
+                    </li>
+
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link-but  menu__lang" >Arabic</a>
+                    </li>
+                </ul>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <video autoPlay loop muted>
+                <source src="./assest/Video/1.mp4" type="video/mp4"/>
+            </video>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__data-subtitle">Welcome To AL Mufawed  Co <i class="ri ri-money-dollar-circle-fill"></i></span>
+                    <h1 class="home__data-title">Claims Settlement</h1>
+                    <span class="home__data-subtitle-2">We also specialist to make settlement for free hold<br> land and plot bought in UK from UAE brokerage <br> company and the contract & payment done in UAE</span>
+                    <a href="tel:1234567890" class="button home__btn">Call Us Now</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://api.whatsapp.com/send?phone=00971503040090" target="_blank" class="home__social-link">
+                        <i class="ri-whatsapp-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/sea-power-co/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://twitter.com/SeaPowerCo1" target="_blank" class="home__social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </div>
+
+                <div class="home__info">
+                    <div>
+                        <span class="home__info-title">AL Mufawed  Co</span>
+                        <a href="./mission.html" class="button button--flex button--link home__info-button">
+                            dubai business bay metropolitan tower
+                        </a>
+                    </div>
+
+                    <div class="home__info-overlay">
+                        <img src="./assest/img/logo-2.png" alt="" class="home__info-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">More Information <br> About AL Mufawed </h2>
+                    <p class="about__description">We are a Claims Recovery and Financial Management Services company based in Dubai, United Arab Emirates.
+                        The AL Mufawed team handles a comprehensive range of financial recoveries, such as invoices; insurance payments; supplier and rent payments; and personal and business loans, for individuals and businesses across an array of industries. <br>
+                        AL Mufawed was founded on traditional values, and we’re proud of our personal approach. Our people are experienced, effective and efficient, but never compromise on providing a client-focused service.    
+                    </p>
+                    <a href="#features" class="button">Our Value</a>
+                </div>
+
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="./assest/img/About/about2.jpg" alt="" class="about__img-one">
+                    </div>
+
+                    <div class="about__img-overlay">
+                        <img src="./assest/img/About/about1.jpg" alt="" class="about__img-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!--==================== Services ====================-->
+         <section class="popular section" id="popular">
+            <h2 class="section__title">
+                Choose Your Services <br> Of The Sea power
+            </h2>
+            
+            <div class="popular__container container swiper mySwiper row">
+                <div class="swiper-wrapper">
+                    <!-- article #1 -->
+                    <article class="popular__card swiper-slide box" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                        <h3 class="popular__title">RECOVERY SOLUTIONS
+                        </h3>
+                        <img src="./assest/img/Services/model-1.webp" alt="Services" class="popular__img" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+
+                        <div class="popular__data">
+                           <div class="popular__description">
+                            AL Mufawed values the importance of<br>long-established relationships, and our<br>team handles cases with sensitivity...
+                           </div>
+                        </div>
+
+                        <h3 class="popular__price text-center">See More</h3>
+
+                        <button class="button popular__button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </button>
+                    </article>
+
+                    <!-- article #2 -->
+                    <article class="popular__card swiper-slide box" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-2">
+                        <h3 class="popular__title">FINANCIAL MANAGEMENT
+                        </h3>
+                        <img src="./assest/img/Services/model-2.webp" alt="Services" class="popular__img" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-2">
+
+                        <div class="popular__data">
+                            <div class="popular__description">
+                                At AL Mufawed, we pull together our <br> wisdom and expertise to make <br> debt work for you...
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price text-center">See More</h3>
+
+                        <button class="button popular__button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-2">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </button>
+                    </article>
+
+                    <!-- article #3 -->
+                    <article class="popular__card swiper-slide box" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-3">
+                        <h3 class="popular__title">FINANCIAL SETTLEMENT
+                        </h3>
+                        <img src="./assest/img/Services/model-3.webp" alt="Services" class="popular__img" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-3">
+
+                        <div class="popular__data">
+                            <div class="popular__description">
+                                Debt settlement is negotiating with<br>creditors to settle a debt for less<br>than what br is owed. This method.... 
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price text-center">See More</h3>
+
+                        <button class="button popular__button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-3">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </button>
+                    </article>
+
+                    <!-- article #4 -->
+                    <article class="popular__card swiper-slide box" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-4">
+                        <h3 class="popular__title">OUTSOURCING</h3>
+                        <img src="./assest/img/Services/model-4.webp" alt="Services" class="popular__img" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-4">
+
+                        <div class="popular__data">
+                            <div class="popular__description">
+                                For many organisations, running an <br> in-house debt management<br>department simply  doesn’t make..... 
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price text-center">See More</h3>
+
+                        <button class="button popular__button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-4">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </button>
+                    </article>
+
+                    <!-- article #5 -->
+                    <article class="popular__card swiper-slide box" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-5">
+                        <h3 class="popular__title">INTERACTIVE ONLINE ACCESS
+                        </h3>
+                        <img src="./assest/img/Services/model-5.webp" alt="Services" class="popular__img" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-5">
+
+                        <div class="popular__data">
+                            <div class="popular__description">
+                                We understand that money can be<br> a round-the-clock worry. And so we <br> believe that our clients..... 
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price text-center">See More</h3>
+
+                        <button class="button popular__button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-5">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </button>
+                    </article>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!--==================== popular modal 1 =================== -->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">RECOVERY SOLUTIONS
+                </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="model__img" src="./assest/img/Services/model-1.webp" alt="Services">
+                  <p class="model__description">
+                    AL Mufawed values the importance of long-established relationships, and our team handles cases with sensitivity, discretion and respect with the view to recovering not only monies, but also relationships. <br>
+                    The AL Mufawed team is trained in communication, and we believe that this is part of our success. Our team establishes meaningful connections in order to resolve disputes as quickly, and as peacefully, as possible. <br>
+                    In situations where an immediate solution can’t be found, the AL Mufawed team is well versed in legal negotiations and proceedings. We’ll offer support every step of the way, including making necessary calls, notices and visits, and carrying out immigration and police checks.
+                 </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--==================== popular modal 2 =================== -->
+        <div class="modal fade" id="exampleModalToggle-2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">FINANCIAL MANAGEMENT
+                </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="model__img" src="./assest/img/Services/model-2.webp" alt="Services">
+                  <p class="model__description">
+                    At AL Mufawed, we pull together our wisdom and expertise to make debt work for you. <br>
+                    <br>
+                    • Debt Counselling
+                    <br>
+                    Take charge of your debt with guidance from our experts. Education, planning and budgeting will help you to not only manage current debt, but also plan for the future. 
+                 </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--==================== popular modal 3 =================== -->
+        <div class="modal fade" id="exampleModalToggle-3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">FINANCIAL SETTLEMENT
+                </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="model__img" src="./assest/img/Services/model-3.webp" alt="Services">
+                  <p class="model__description">
+                    Debt settlement is negotiating with creditors to settle a debt for less than what is owed. This method is most often used to settle a substantial debt with a single creditor, but can be used to deal with multiple creditors. <br>
+                    <br>
+                    understand how painful and troublesome legal issues can be and become. Therefore, we not just act as a mediator between you and your financial institution but also ensure that a pragmatic and customized solution that will suit your needs is provided. <br>
+                    <br>
+                    is negotiating with creditors to settle a debt for less than what is owed. This method is most often used to settle a substantial debt with a single creditor, but can be used to deal with multiple creditors.
+                 </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--==================== popular modal 4 =================== -->
+        <div class="modal fade" id="exampleModalToggle-4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">OUTSOURCING</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="model__img" src="./assest/img/Services/model-4.webp" alt="Services">
+                  <p class="model__description">
+                    For many organisations, running an in-house debt management department simply doesn’t make good financial sense. <br>
+                    <br>
+                    Recruiting the right people for the job is costly and time-consuming. Training new recruits and offering permanent contracts is a huge investment, and often isn’t the most efficient or effective way of ensuring your owed debts are recovered. <br>
+                    <br>
+                    The AL Mufawed solution is Outsourcing. We provide an expert debt management and recovery service, as and when you need us. When you choose AL Mufawed, you’ll receive the same personalized and dedicated service you’d enjoy from an in-house team, but without the on-going costs and commitment.
+                 </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--==================== popular modal 5 =================== -->
+        <div class="modal fade" id="exampleModalToggle-5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">INTERACTIVE ONLINE ACCESS
+                </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="model__img" src="./assest/img/Services/model-5.webp" alt="Services">
+                  <p class="model__description">
+                    We understand that money can be a round-the-clock worry. And so we believe that our clients should have round-the-clock access to updates on their pending cases. <br>
+                    <br>
+                    As well as the AL Mufawed team’s liaison with clients with regular updates and reports, we also give our clients secure access to view their cases on the AL Mufawed Client Portal. <br>
+                    <br>
+                    You’ll have access to real-time reports, summaries, analysis, and a range of debt management tools, available at your fingertips, 24 hours a day, 7 days a week.
+                 </p>
+                </div>
+              </div>
+            </div>
+        </div>
+     
+        <!--==================== EXPERIENCE ====================-->
+        <section class="experience section container">
+            <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+
+            <div class="experience__container container grid">
+                <div class="experience__content grid">
+                    <div class="experience__data">
+                        <h2 class="experience__number">+15</h2>
+                        <span class="experience__description">Year<br>Experience</span>
+                    </div>
+
+                    <div class="experience__data">
+                        <h2 class="experience__number">3,519</h2>
+                        <span class="experience__description">Satisfied <br> Clients</span>
+                    </div>
+
+                    <div class="experience__data">
+                        <h2 class="experience__number">96%</h2>
+                        <span class="experience__description">Customer <br> Satisfaction</span>
+                    </div>
+                </div>
+
+                <div class="experience__img grid">
+                    <div class="experience__overlay">
+                        <img src="./assest/img/Experience/experience1.jpg" alt="" class="experience__img-one">
+                    </div>
+                    
+                    <div class="experience__overlay">
+                        <img src="./assest/img/Experience/experience2.jpg" alt="" class="experience__img-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== VIDEO ====================-->
+        <section class="video section container">
+            <h2 class="section__title">Video Tour</h2>
+
+            <div class="video__container container">
+                <p class="video__description">Find out more with our video, showing how Explains an overview of our company.
+                </p>
+
+                <div class="video__content">
+                    <video id="video-file">
+                        <source src="./assest/Video/2.mp4" type="video/mp4">
+                    </video>
+
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== Offer ====================-->
+        <section class="offer section">
+            <img src="./assest/img/map-cover1.jpg" alt="" class="offer__bg">
+            <div class="offer__container container grid">
+
+                <div class="offer__data">
+                    <h3 class="offer__title">
+                        THREE MAIN FINANCIAL RECOVERY PROCEDURES
+                    </h3>
+
+                    <ul class="offer__description">
+                        <li>We always try to resolve cases amicably and without the involvement of third parties or legal procedures.</li> <br>
+                        <li>Where an amicable solution cannot be found, we’ll follow through with legal negotiation, acting on your side every step of the way.</li> <br>
+                        <li>In cases where legal negotiation is unsuccessful, The Fort Equity team will support you towards recovering your money through Litigation (legal proceedings).</li>
+                    </ul>
+
+                    <a href="mailto:ops@seapower.com.sa" target="_blank" class="button">
+                        Email us
+                    </a>
+                </div>
+
+                <img src="./assest/img/map.png" alt="" class="offer__img">
+            </div>
+        </section>
+
+        <!--==================== Value ====================-->
+        <section class="section features" id="features">
+            <div class="container grid">
+              <h2 class="section__title">Why Choose AL Mufawed?</h2>
+  
+              <ul class="grid-list">
+                <li class="feature-item">
+                  <div class="feature-card group-1">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-1.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="card-title">
+                        1. PAYMENT OPTIONS
+                    </h3>
+  
+                    <p class="card-text">
+                        Most popular methods: <br>
+                        Bank Transfer, Cheques, Cash and Installment Basis Plans
+                    </p>
+                  </div>
+                </li>
+  
+                <li class="feature-item">
+                  <div class="feature-card group-2">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-2.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="title-2 card-title">2. GOODWILL</h3>
+  
+                    <p class="label-1 card-text">
+                        Our team handles collections ensures that they build a solid relationship while handling the cases with the clients which enables the creditor to have a continuous business relationship
+                    </p>
+                  </div>
+                </li>
+  
+                <li class="feature-item">
+                  <div class="feature-card group-1">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-3.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="title-2 card-title">3. GCC COVERAGE</h3>
+  
+                    <p class="label-1 card-text">
+                        Fort Equity has a wide coverage and several business partners based all over GCC countries who help in providing various services as required
+                    </p>
+                  </div>
+                </li>
+  
+                <li class="feature-item">
+                  <div class="feature-card group-2">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-4.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="title-2 card-title">
+                        4. LEGAL COMPLIANCE
+                    </h3>
+  
+                    <p class="label-1 card-text">
+                        Registration Cases are forwarded in Dubai Court and handle by our professional Lawyers
+                    </p>
+                  </div>
+                </li>
+
+                <li class="feature-item">
+                  <div class="feature-card group-2">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-5.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="title-2 card-title">
+                        5. MARGIN OUTCOME
+                    </h3>
+  
+                    <p class="label-1 card-text">
+                        95% Cases are solved within a period of time, we ensure you that your case will resolved
+                    </p>
+                  </div>
+                </li>
+
+                <li class="feature-item">
+                  <div class="feature-card group-1">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-6.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="title-2 card-title">
+                        6. LOW COMMISSIONS
+                    </h3>
+  
+                    <p class="label-1 card-text">
+                        Specific commissions based on case to case basis and mutual agreement
+                    </p>
+                  </div>
+                </li>
+
+                <li class="feature-item">
+                  <div class="feature-card group-2">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-7.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="title-2 card-title">
+                        7. ADVANCE REPORTING
+                    </h3>
+  
+                    <p class="label-1 card-text">
+                        Downloadable reports, real-time case status, Customer Support Available
+                    </p>
+                  </div>
+                </li>
+
+                <li class="feature-item">
+                  <div class="feature-card group-1">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-8.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="title-2 card-title">
+                        8. QUICK SERVICE
+                    </h3>
+  
+                    <p class="label-1 card-text">
+                        We have a team of professionals who cater to the needs of their client in providing rapid services and customer satisfaction
+                    </p>
+                  </div>
+                </li>
+
+                <li class="feature-item">
+                  <div class="feature-card group-1">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-9.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="title-2 card-title">
+                        9. CROSS-PLATFORM
+                    </h3>
+  
+                    <p class="label-1 card-text">
+                        Website is available in any browsers including mobile support
+                    </p>
+                  </div>
+                </li>
+
+                <li class="feature-item">
+                  <div class="feature-card group-2">
+                    <div class="card-icon">
+                      <img
+                        src="./assest/img/featuers/features-icon-10.png"
+                        width="100"
+                        height="80"
+                        alt="icon"
+                      />
+                    </div>
+  
+                    <h3 class="title-2 card-title">
+                        10. 100% SATISFACTION
+                    </h3>
+  
+                    <p class="label-1 card-text">
+                        Our focus remains on customer satisfaction and committed to satisfy your needs.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+        </section>
+
+        <!--==================== Contact  ================== -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Us</h2>
+            <h2 class="section__title contact--location">AL Mufawed understands financial recovery, whether you’re owed or owing, brings with it stress and worry. <br>
+                We promise to work tirelessly to alleviate some of that stress. We promise complete honesty, transparency and discretion. And we promise that our fees are always fair.</h2>
+            <div class="contact--container container grid">
+                <div class="contact--content contact-left">
+                    <h3 class="contact--title">call us now</h3>
+                    
+                    <div class="contact--info">
+                        <div class="contact--card">
+                            <i class="fa-solid fa-envelope contact--card-icon"></i>
+                            <h3 class="contact--card-title">Email</h3>
+                            <span class="contact--card-data"> info@seapower.com.sa</span>
+                            <a href="mailto: seapower.com.sa@correo.com" target="noopener" class="contact--button">
+                                call now<i class="fa-solid fa-arrow-right contact--button-icon"></i>
+                            </a>
+                        </div>
+                        <div class="contact--card">
+                            <i class="fa-solid fa-phone contact--card-icon"></i>
+                            <h3 class="contact--card-title">number</h3>
+                            <span class="contact--card-data">00966126486224</span>
+                            <a href="tel:00966126486224" target="noopener" class="contact--button">
+                                call now<i class="fa-solid fa-arrow-right contact--button-icon"></i>
+                            </a>
+                        </div>
+                        <div class="contact--card">
+                            <i class="fa-solid fa-phone-volume contact--card-icon"></i>
+                            <h3 class="contact--card-title">number</h3>
+                            <span class="contact--card-data">00966122128718</span>
+                            <a href="tel:00966122128718" target="noopener" class="contact--button">
+                                call now<i class="fa-solid fa-arrow-right contact--button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact--content contact-right">
+                    <h3 class="contact--title">Write us your message</h3>
+                    <form action="" class="contact--form">
+                        <div class="contact--form-div">
+                            <label for="" class="contact--form-tag">Names</label>
+                            <input type="text" placeholder="Insert Your Name" class="contact--form-input">
+                        </div>
+                        <div class="contact--form-div">
+                            <label for="" class="contact--form-tag">Mail</label>
+                            <input type="email" placeholder="Insert Your Email" class="contact--form-input">
+                        </div>
+                        <div class="contact--form-div contact--form-area">
+                            <label for="" class="contact--form-tag">message</label>
+                            <textarea class="contact--form-input" placeholder="Write Your Message" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">AL Mufawed</h3>
+                    <p class="footer__description">dubai business bay metropolitan tower</p>
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=+966 559635215&text=Hello, more information!" target="_blank" class="footer__social">
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+
+                        <a href="https://twitter.com/SeaPowerCo1" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+
+                        <a href="mailto: seapower.com.sa@correo.com" target="_blank" class="footer__social">
+                            <i class="ri-mail-fill"></i>
+                            
+                        </a>
+                        <a href="https://www.linkedin.com/company/sea-power-co/" target="_blank" class="footer__social">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">About</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="#popular" class="footer__link">Services</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Our Mission</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Our Vision</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Company</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="#features" class="footer__link">The Value</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="tel:1234567890" class="footer__link">Call us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://api.whatsapp.com/send?phone=00971503040090" class="footer__link">whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="./contact.html" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Our Offices</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#contact" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__rights">
+                <p class="footer__copy">
+                    All rights reserved © AL Mufawed 2024
+                </p>
+                <div class="footer__terms">
+                    <a href="https://ahmedragab24.github.io/" class="footer__terms-link" target="_blank">Design and development by : Ahmed Ragab.</a>
+                    <!-- <a href="#" class="footer__terms-link">Privacy Policy</a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+   
+
+     <!--============================= SCROLL UP ====================================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+<!--=================================== SCROLL REVEAL=================================-->
+    <script src="./assest/Js/scrollreveal.min.js"></script>
+
+<!-- ===================================  SWIPER JS  ================================ -->
+    <script src="./assest/Js/swiper-bundle.min.js"></script>
+
+<!-- ===================================  Translate  ================================ -->
+    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+<!-- =================================== Bootstrap ==================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- ===================================  MAIN JS  ================================== -->
+<script src="./assest/Js/Translate.js"></script>
+<script src="./assest/Js/main.js"></script>
+    
+</body>
+</html>

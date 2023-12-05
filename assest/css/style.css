@@ -11,18 +11,18 @@
   --hue-color: 190;
 
   /* HSL color mode */
-  --first-color: rgb(42, 92, 141);
-  --first-color-second: hsl(201, 73%, 22%);
-  --first-color-alt: hsl(211, 64%, 15%);
-  --first-color-light: hsl(212, 52%, 65%);
-  --title-color: hsl(214, 63%, 18%);
-  --text-color: hsl(218, 24%, 35%);
-  --text-color-light: hsl(229, 8%, 60%);
+  --first-color: #e48e54;
+  --first-color-second: hsl(25, 30%, 61%);
+  --first-color-alt: hsl(22, 52%, 38%);
+  --first-color-light: rgb(228, 166, 115);
+  --title-color: rgb(100, 73, 73);
+  --text-color: rgb(49, 35, 35);
+  --text-color-light: rgb(83, 68, 57);
   --input-color: hsl(220, 20%, 97%);
   --body-color: hsl(216, 100%, 99%);
   --white-color: #fff;
-  --scroll-bar-color: hsl(214, 14%, 90%);
-  --scroll-thumb-color: hsl(212, 12%, 75%);
+  --scroll-bar-color: hsl(24, 14%, 90%);
+  --scroll-thumb-color: hsl(24, 17%, 65%);
 
   /*========== Font and typography ==========*/
   --body-font: "Open Sans", sans-serif;
@@ -74,13 +74,13 @@
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color-second: hsl(211, 49%, 29%);
+  --first-color-second: hsl(25, 44%, 59%);
   --title-color: hsl(210, 23%, 95%);
-  --text-color: hsl(210, 8%, 75%);
-  --input-color: hsl(215, 29%, 16%);
-  --body-color: hsl(218, 33%, 13%);
-  --scroll-bar-color: hsl(217, 12%, 48%);
-  --scroll-thumb-color: hsl(213, 12%, 36%);
+  --text-color: hsl(30, 8%, 75%);
+  --input-color: hsl(30, 29%, 16%);
+  --body-color: hsl(30, 23%, 9%);
+  --scroll-bar-color: hsl(30, 12%, 48%);
+  --scroll-thumb-color: hsl(30, 12%, 36%);
   transition: 1s;
 }
 
@@ -243,7 +243,7 @@ input {
 }
 
 .dropdown-menu {
-  background-color: rgb(36, 80, 146);
+  background-color: rgb(223, 164, 117);
 }
 
 .dropdown-menu .dropdown-item a {
@@ -317,7 +317,7 @@ input {
 /* Change background header */
 .scroll-header {
   background-color: var(--body-color);
-  box-shadow: rgba(0, 52, 84, 0.298) 0px 2px 2px;
+  box-shadow: rgba(84, 34, 0, 0.298) 0px 2px 2px;
 }
 .scroll-header .nav__logo,
 .scroll-header .nav__toggle {
@@ -381,7 +381,7 @@ input {
   display: block;
   margin-bottom: var(--mb-1);
   font-weight: var(--font-semi-bold);
-  color: hsl(214, 31%, 90%);
+  color: hsl(30, 31%, 90%);
   font-size: 23px;
   letter-spacing: 1px;
 }
@@ -390,6 +390,8 @@ input {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
+  filter: drop-shadow(2px 2px 8px #000000);
+  -webkit-filter: drop-shadow(2px 2px 8px #000000);
 }
 
 .home__social {
@@ -400,7 +402,7 @@ input {
 
 .home__social i {
   padding: 5px;
-  background-color: rgba(36, 80, 146, 0.453);
+  background-color: rgba(146, 86, 30, 0.453);
   color: var(--white-color);
   border: 1px solid var(--first-color);
   border-radius: 15px;
@@ -426,7 +428,7 @@ input {
 }
 
 .home__info {
-  background-color: hsla(210, 40%, 44%, 0.661);
+  background-color: #c4afa457;
   display: flex;
   padding: 1.5rem 1rem;
   align-items: center;
@@ -473,7 +475,7 @@ input {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  filter: drop-shadow(1px 1px 2px #00000026);
+  filter: drop-shadow(1px 1px 2px #000000);
 }
 
 .home__info-img:hover {
@@ -488,11 +490,7 @@ input {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background: linear-gradient(
-    120deg,
-    hsl(206, 99%, 29%) 1%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
   color: var(--white-color);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
@@ -510,12 +508,8 @@ input {
 
 .button:hover {
   color: var(--text-color-light);
-  background: linear-gradient(
-    180deg,
-    var(--first-color-alt) 1%,
-    hsl(206, 99%, 29%) 100%
-  );
-  box-shadow: 0 12px 16px hsla(215, 100%, 50%, 0.319);
+  background: linear-gradient(135deg, #ea5455 10%, #feb692 100%);
+  box-shadow: 3px 3px 16px hsla(27, 100%, 50%, 0.319);
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -609,11 +603,7 @@ input {
 .popular__card {
   position: relative;
   width: 250px;
-  background: linear-gradient(
-    180deg,
-    var(--first-color-light) 1%,
-    hsl(208, 100%, 20%) 100%
-  );
+  background: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
   box-shadow: 0 12px 16px hsla(0, 0%, 0%, 0.375);
   padding: 2rem 1.5rem 1.5rem;
   border-radius: 1rem;
@@ -795,7 +785,7 @@ input {
 }
 
 .experience__content {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 1rem;
   justify-items: center;
   padding: 0 2rem;
@@ -805,7 +795,7 @@ input {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-5);
-  border: 1px solid hsl(201, 73%, 22%);
+  border: 1px solid hsl(27, 73%, 22%);
   padding: 15px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -987,7 +977,7 @@ input {
 }
 
 .feature-card .card-title {
-  color: var(--first-color-light);
+  color: var(--text-color-light);
   margin-block: 15px;
   font-size: var(--h3-font-size);
 }
@@ -1032,11 +1022,7 @@ input {
 }
 
 .contact--card {
-  background: linear-gradient(
-    190deg,
-    hsl(205, 60%, 54%) 1%,
-    var(--first-color-second) 100%
-  );
+  background: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
   box-shadow: 0 12px 16px hsla(0, 0%, 0%, 0.375);
   padding: 1rem;
   border-radius: 0.75rem;
@@ -1061,11 +1047,11 @@ input {
 .contact--card-data {
   display: block;
   margin-bottom: 0.75rem;
-  color: var(--first-color-light);
+  color: var(--text-color-light);
 }
 
 .contact--button {
-  color: var(--first-color-light);
+  color: var(--title-color);
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
@@ -1135,10 +1121,9 @@ input {
   resize: none;
 }
 
-
 /*=============== FOOTER ===============*/
 .footer {
-  background-color: hsla(201, 86%, 67%, 0.304);
+  background-color: #c4afa457;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -1229,11 +1214,7 @@ input {
   position: fixed;
   right: 3rem;
   bottom: -20%;
-  background: linear-gradient(
-    170deg,
-    hsl(205, 60%, 54%) 1%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
   padding: 0.5rem;
   display: flex;
   opacity: 0.8;
@@ -1247,11 +1228,7 @@ input {
 }
 
 .scrollup:hover {
-  background: linear-gradient(
-    170deg,
-    var(--first-color-alt) 1%,
-    hsl(205, 60%, 54%) 100%
-  );
+  background: linear-gradient(135deg, #ea5455 10%, #feb692 100%);
   opacity: 1;
   border-radius: 30px;
   transform: translateY(-0.25rem);

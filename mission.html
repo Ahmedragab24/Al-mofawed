@@ -1,359 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mission</title>
 
-        <!-- ===================================  FAVICON  ================================== -->
-        <link rel="shortcut icon" href="./assest/img/favicon.png" type="image/x-icon">
+    <!-- ===================================  FAVICON  ================================== -->
+    <link
+      rel="shortcut icon"
+      href="./assest/img/favicon.png"
+      type="image/x-icon"
+    />
 
-        <!-- ===================================  REMIX ICONS  ================================== -->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    
-        <!-- ===================================  Font awesome  ================================== -->
-        <script src="https://kit.fontawesome.com/e29ee4bc00.js" crossorigin="anonymous"></script>
-    
-        <!-- =================================== Bootstrap CSS ====================================-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    
-        <!-- ===================================  SWIPER CSS  ================================== -->
-        <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css">
-    
-        <!-- ===================================  css  ================================== -->
-        <link rel="stylesheet" href="./assest/css/style.css">
-</head>
+    <!-- ===================================  REMIX ICONS  ================================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- ===================================  Font awesome  ================================== -->
+    <script
+      src="https://kit.fontawesome.com/e29ee4bc00.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- =================================== Bootstrap CSS ====================================-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- ===================================  SWIPER CSS  ================================== -->
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css" />
+
+    <!-- ===================================  css  ================================== -->
+    <link rel="stylesheet" href="./assest/css/style.css" />
+  </head>
+
+  <body>
+    <!-- ===================  Header   ===================== -->
     <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <a href="./index.html"><img src="./assest/img/logo.png" alt="" class="nav__logo-img"></a>
-            </div>
+      <nav class="nav container">
+          <div class="nav__logo">
+              <a href="./index.html#home"><img src="./assest/img/logo.png" alt="" class="nav__logo-img"></a>
+          </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="./index.html" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item dropdown">
-                        <a href="#about" class="nav__link-but dropdown-toggle" role="button" data-bs-toggle="dropdown">About Us</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item "><a class="nav__link" href="./index.html#subscribe">The Company</a></li>
-                            <li class="dropdown-item "><a class="nav__link" href="./index.html#Our Group">Our Group</a></li>
-                            <li class="dropdown-item "><a class="nav__link" href="./ChairmanMessage.html">Chairman Message</a></li>
-                            <li class="dropdown-item "><a class="nav__link" href="./mission.html">Our Mission</a></li>
-                            <li class="dropdown-item "><a class="nav__link" href="./vision.html">Our Vision</a></li>
-                            <li class="dropdown-item "><a class="nav__link" href="./ourGroup.html">Affiliations</a></li>
-                            <li class="dropdown-item "><a class="nav__link" href="./CustomersBenefits.html">Customers Benefits</a></li>
-                        </ul>
-                    </li>
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item">
+                      <a href="./index.html#home" class="nav__link menu__home">Home</a>
+                  </li>
+                  <li class="nav__item dropdown">
+                      <a href="./index.html#about" class="nav__link-but dropdown-toggle menu__about" role="button" data-bs-toggle="dropdown">About Us</a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item "><a class="nav__link menu__company" href="#about">About</a></li>
+  
+                          <li class="dropdown-item "><a class="nav__link menu__mission" href="./mission.html">our mission</a></li>
+                          <li class="dropdown-item "><a class="nav__link menu__vision" href="./vision.html">our Vision</a></li>
+                      </ul>
+                  </li>
 
-                    <li class="nav__item">
-                        <a href="./index.html#popular" class="nav__link">Our Services</a>
-                    </li>
+                  <li class="nav__item">
+                      <a href="./index.html#popular" class="nav__link menu__services">Services</a>
+                  </li>
 
-                    <li class="nav__item">
-                        <a href="./OurOffices.html" class="nav__link">Our Offices</a>
-                    </li>
+                  <li class="nav__item">
+                      <a href="./index.html#contact" class="nav__link menu__contact">Contact Us</a>
+                  </li>
 
-                    <li class="nav__item">
-                        <a href="./news.html" class="nav__link">News</a>
-                    </li>
+                  <!-- <li class="nav__item dropdown">
+                      <a href="#" class="nav__link-but  menu__lang" >Arabic</a>
+                  </li> -->
+              </ul>
 
-                    <li class="nav__item">
-                        <a href="./job.html" class="nav__link">Job</a>
-                    </li>
+              <div class="nav__dark">
+                  <!-- Theme change button -->
+                  <span class="change-theme-name">Dark mode</span>
+                  <i class="ri-moon-line change-theme" id="theme-button"></i>
+              </div>
 
-                    <li class="nav__item">
-                        <a href="./contact.html" class="nav__link">Contact Us</a>
-                    </li>
+              <i class="ri-close-line nav__close" id="nav-close"></i>
+          </div>
 
-                    <li class="nav__item dropdown">
-                        <a href="#" class="nav__link-but dropdown-toggle" role="button" data-bs-toggle="dropdown">The Language</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item "><a class="nav__link-but menu__lang-ar" href="#" id="google_translate_element"></a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <div class="nav__dark">
-                    <!-- Theme change button -->
-                    <span class="change-theme-name">Dark mode</span>
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-                </div>
-
-                <i class="ri-close-line nav__close" id="nav-close"></i>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
-            </div>
-        </nav>
+          <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-function-line"></i>
+          </div>
+      </nav>
     </header>
 
     <section class="Mission section" id="Mission">
-        <h2 class="section__title">Mission</h2>
-        <div class="Mission__container container">
-            <div class="Mission__group-img grid">
-                <div class="img__card">
-                    <img src="./assest/img/Mission/mission1.png" alt="img">
-                </div>
+      <h2 class="section__title">Mission</h2>
+      <div class="Mission__container container">
+        <div class="Mission__group-img grid">
+          <div class="img__card">
+            <img src="./assest/img/Mission/mission1.png" alt="img" />
+          </div>
 
-                <div class="img__card">
-                    <img src="./assest/img/Mission/mission2.png" alt="img">
-                </div>
+          <div class="img__card">
+            <img src="./assest/img/Mission/mission2.png" alt="img" />
+          </div>
 
-                <div class="img__card">
-                    <img src="./assest/img/Mission/mission3.png " alt="img">
-                </div>
-            </div>
-
-            <div class="Mission__description">
-                <p>
-                    Our customers are the strongest asset we possess, hence knowing their business and offering incomparable services is our expertise. Best possible shipping solutions, dedication towards work, innovation and continuous investments in technology which is adding value to our business. We focus more on our customer requirements and provide them with innovative logistics & supply chain solutions with best operational capabilities and customer services. We are proud to be the part of our customer’s business.
-                </p>
-
-                <ul>
-                    <li>Customer Orientation.</li>
-                    <li>Operational Excellence.</li>
-                    <li>Cost Efficiency.</li>
-                    <li>Recognition of People / Motivated Employees.</li>
-                    <li>Sustainable growth with high quality.</li>
-                    <li>We build relations with our clients to the higher level.</li>
-                    <li>Our objective to give our clients the superior services.</li>
-                    <li>Environmental & Social awareness</li>
-                </ul>
-            </div>
+          <div class="img__card">
+            <img src="./assest/img/Mission/mission3.png " alt="img" />
+          </div>
         </div>
+
+        <div class="Mission__description">
+          <p>
+            AL Mufawed is a leading Financial Management and Claims Recovery
+            Services company with a personal approach. We serve businesses and
+            individuals in the pursuit of managing claims successfully,
+            recovering monies swiftly and salvaging valuable business
+            relationships. <br />
+            <br />
+            Settlement of financial claims to help resolve the dispute in a
+            manner agreed upon by the disputing parties. These companies provide
+            legal and financial advice and guidance and negotiate on behalf of
+            clients to reach a fair and satisfactory settlement agreement for
+            all. <br />
+            <br />
+            Financial claims adjusters work in a variety of areas, including:
+          </p>
+
+          <ul>
+            <li>
+              Insurance: It deals with the settlement of insurance claims,
+              whether they are of a personal nature, such as health and
+              automobile insurance, or a commercial nature, such as property and
+              liability insurance.
+            </li>
+            <li>
+              Financial Services: Helps settle claims related to financial
+              services such as loans, mortgages, and credit cards.
+            </li>
+            <li>
+              Commercial contracts: settles financial claims between companies
+              And individuals in relation to commercial contracts and
+              engagements.
+            </li>
+          </ul>
+
+          <p>
+            The company relies on a team of experts specialized in negotiation,
+            financial and legal analysis. These companies may also use
+            alternative means of dispute resolution such as arbitration or
+            conciliation. <br />
+            <br />
+            The mission of this company is to achieve a fair and satisfactory
+            settlement for all, saving the time, effort and costs associated
+            with lengthy court proceedings. Clients can benefit from the
+            experience and knowledge of these companies to achieve a positive
+            outcome in financial settlement cases.
+          </p>
+        </div>
+      </div>
     </section>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <div class="footer__content grid">
-                    <div class="footer__data">
-                        <h3 class="footer__title">Sea Power</h3>
-                        <p class="footer__description">You Are WELCOME To The Digital Logistics World.</p>
-                        <div>
-                            <a href="https://api.whatsapp.com/send?phone=+966 559635215&text=Hello, more information!" target="_blank" class="footer__social">
-                                <i class="ri-whatsapp-fill"></i>
-                            </a>
-    
-                            <a href="https://twitter.com/SeaPowerCo1" target="_blank" class="footer__social">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-    
-                            <a href="mailto: seapower.com.sa@correo.com" target="_blank" class="footer__social">
-                                <i class="ri-mail-fill"></i>
-    
-                            </a>
-                            <a href="https://www.linkedin.com/company/sea-power-co/" target="_blank" class="footer__social">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">About</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="./index.html#popular" class="footer__link">Service</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="./mission.html" class="footer__link">Our Mission</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="./CustomersBenefits.html" class="footer__link">Customers Benefits</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Company</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="./ChairmanMessage.html" class="footer__link">Chairman</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="./index.html#Our Group" class="footer__link">Our Group</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="./ourGroup.html" class="footer__link">Affiliations</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Support</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="./contact.html" class="footer__link">FAQs</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="./OurOffices.html" class="footer__link">Our Offices</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="./index.html#contact" class="footer__link">Contact Us</a>
-                            </li>
-                        </ul>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">AL Mufawed</h3>
+                    <p class="footer__description">dubai business bay metropolitan tower</p>
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=+966 559635215&text=Hello, more information!" target="_blank" class="footer__social">
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+
+                        <a href="https://twitter.com/SeaPowerCo1" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+
+                        <a href="mailto: seapower.com.sa@correo.com" target="_blank" class="footer__social">
+                            <i class="ri-mail-fill"></i>
+                            
+                        </a>
+                        <a href="https://www.linkedin.com/company/sea-power-co/" target="_blank" class="footer__social">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
                     </div>
                 </div>
-    
-                <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2023 Sea Power. All rigths reserved.</p>
-                    <div class="footer__terms">
-                        <a href="https://ahmedragab24.github.io/" class="footer__terms-link" target="_blank">Design and development by : Ahmed Ragab.</a>
-                        <!-- <a href="#" class="footer__terms-link">Privacy Policy</a> -->
-                    </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">About</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="./index.html#popular" class="footer__link">Services</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./mission.html" class="footer__link">Our Mission</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./vision.html" class="footer__link">Our Vision</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Company</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="./index.html#features" class="footer__link">The Value</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="tel:1234567890" class="footer__link">Call us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://api.whatsapp.com/send?phone=00971503040090" class="footer__link">whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="./contact.html" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Our Offices</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./index.html#contact" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
 
+            <div class="footer__rights">
+                <p class="footer__copy">
+                    All rights reserved © AL Mufawed 2024
+                </p>
+                <div class="footer__terms">
+                    <a href="https://ahmedragab24.github.io/" class="footer__terms-link" target="_blank">Design and development by : Ahmed Ragab.</a>
+                    <!-- <a href="#" class="footer__terms-link">Privacy Policy</a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <style>
+    <style>
+      .nav__link,
+      .menu__about,
+      .change-theme {
+        color: var(--text-color);
+      }
 
-            .Mission .section__title {
-                margin: 4rem 0;
-            }
-            .Mission__group-img {
-                display: flex;
-                justify-content: center;
-                gap: 3rem;
-                margin-bottom: 3rem;
-            }
-            .img__card {
-                border-radius: 15px 50px;
-                box-shadow: 0 12px 16px hsla(215, 100%, 50%, 0.471);
-                overflow: hidden;
-                width: 250px;
-                transition: .4s;
-            }
-            .img__card:hover {
-                transition: .4s;
-                -webkit-transition: .3s;
-                -moz-transition: .3s;
-                -ms-transition: .3s;
-                -o-transition: .3s;
-                transform: translate3d(1px, 5%, 1em);
-                -webkit-transform: translate3d(1px, 5%, 1em);
-                -moz-transform: translate3d(1px, 5%, 1em);
-                -ms-transform: translate3d(1px, 5%, 1em);
-                -o-transform: translate3d(1px, 5%, 1em);
-            }
-            .Mission__description {
-                text-align: center;
-            }
-            .Mission__description p{
-                font-size: 18px;
-            }
-            .Mission__description ul{
-                list-style: disc;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            @media screen and (max-width: 367px){
-                .Mission .section__title {
-                    margin-top: 1rem ;
-                }
-                .Mission__group-img {
-                    display: grid;
-                    grid-template-columns: repeat(1, max-content);
-                }
-                .img__card {
-                    border-radius: 15px 50px;
-                    overflow: hidden;
-                    width: 180px;
-                    transition: .4s;
-                }
-                .Mission__description p,
-                .Mission__description ul{
-                    font-size: 12px;
-                }
-            }
+      .Mission .section__title {
+        margin: 4rem 0;
+      }
+      .Mission__group-img {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 3rem;
+      }
+      .img__card {
+        border-radius: 15px 50px;
+        box-shadow: 0 12px 16px hsla(215, 100%, 50%, 0.471);
+        overflow: hidden;
+        width: 250px;
+        transition: 0.4s;
+      }
+      .img__card:hover {
+        transition: 0.4s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transform: translate3d(1px, 5%, 1em);
+        -webkit-transform: translate3d(1px, 5%, 1em);
+        -moz-transform: translate3d(1px, 5%, 1em);
+        -ms-transform: translate3d(1px, 5%, 1em);
+        -o-transform: translate3d(1px, 5%, 1em);
+      }
+      .Mission__description {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+      }
+      .Mission__description p {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      .Mission__description ul {
+        font-size: 1.25rem;
+        font-weight: bold;
+        list-style: decimal;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+      }
+      @media screen and (max-width: 367px) {
+        .Mission .section__title {
+          margin-top: 1rem;
+        }
+        .Mission__group-img {
+          display: grid;
+          grid-template-columns: repeat(1, max-content);
+        }
+        .img__card {
+          border-radius: 15px 50px;
+          overflow: hidden;
+          width: 180px;
+          transition: 0.4s;
+        }
+        .Mission__description p,
+        .Mission__description ul {
+          font-size: 12px;
+        }
+      }
+    </style>
 
-        </style>
+    <script>
+      /*==================== SHOW MENU ====================*/
+      const navMenu = document.getElementById("nav-menu"),
+        navToggle = document.getElementById("nav-toggle"),
+        navClose = document.getElementById("nav-close");
 
+      /*===== MENU SHOW =====*/
+      /* Validate if constant exists */
+      if (navToggle) {
+        navToggle.addEventListener("click", () => {
+          navMenu.classList.add("show-menu");
+        });
+      }
 
-        <script> 
-            /*==================== SHOW MENU ====================*/
-            const navMenu = document.getElementById('nav-menu'),
-                navToggle = document.getElementById('nav-toggle'),
-                navClose = document.getElementById('nav-close')
+      /*===== MENU HIDDEN =====*/
+      /* Validate if constant exists */
+      if (navClose) {
+        navClose.addEventListener("click", () => {
+          navMenu.classList.remove("show-menu");
+        });
+      }
 
-            /*===== MENU SHOW =====*/
-            /* Validate if constant exists */
-            if(navToggle){
-                navToggle.addEventListener('click', () =>{
-                    navMenu.classList.add('show-menu')
-                })
-            }
+      /*==================== REMOVE MENU MOBILE ====================*/
+      const navLink = document.querySelectorAll(".nav__link");
 
-            /*===== MENU HIDDEN =====*/
-            /* Validate if constant exists */
-            if(navClose){
-                navClose.addEventListener('click', () =>{
-                    navMenu.classList.remove('show-menu')
-                })
-            }
+      function linkAction() {
+        const navMenu = document.getElementById("nav-menu");
+        // When we click on each nav__link, we remove the show-menu class
+        navMenu.classList.remove("show-menu");
+      }
+      navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-            /*==================== REMOVE MENU MOBILE ====================*/
-            const navLink = document.querySelectorAll('.nav__link')
+      /*==================== DARK LIGHT THEME ====================*/
+      const themeButton = document.getElementById("theme-button");
+      const darkTheme = "dark-theme";
+      const iconTheme = "ri-sun-line";
 
-            function linkAction(){
-                const navMenu = document.getElementById('nav-menu')
-                // When we click on each nav__link, we remove the show-menu class
-                navMenu.classList.remove('show-menu')
-            }
-            navLink.forEach(n => n.addEventListener('click', linkAction))
+      // Previously selected topic (if user selected)
+      const selectedTheme = localStorage.getItem("selected-theme");
+      const selectedIcon = localStorage.getItem("selected-icon");
 
-            /*==================== DARK LIGHT THEME ====================*/ 
-            const themeButton = document.getElementById('theme-button')
-            const darkTheme = 'dark-theme'
-            const iconTheme = 'ri-sun-line'
+      // We obtain the current theme that the interface has by validating the dark-theme class
+      const getCurrentTheme = () =>
+        document.body.classList.contains(darkTheme) ? "dark" : "light";
+      const getCurrentIcon = () =>
+        themeButton.classList.contains(iconTheme)
+          ? "ri-moon-line"
+          : "ri-sun-line";
 
-            // Previously selected topic (if user selected)
-            const selectedTheme = localStorage.getItem('selected-theme')
-            const selectedIcon = localStorage.getItem('selected-icon')
+      // We validate if the user previously chose a topic
+      if (selectedTheme) {
+        // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+        document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+          darkTheme
+        );
+        themeButton.classList[
+          selectedIcon === "ri-moon-line" ? "add" : "remove"
+        ](iconTheme);
+      }
 
-            // We obtain the current theme that the interface has by validating the dark-theme class
-            const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-            const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
-
-            // We validate if the user previously chose a topic
-            if (selectedTheme) {
-            // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-            document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-            themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
-            }
-
-            // Activate / deactivate the theme manually with the button
-            themeButton.addEventListener('click', () => {
-                // Add or remove the dark / icon theme
-                document.body.classList.toggle(darkTheme)
-                themeButton.classList.toggle(iconTheme)
-                // We save the theme and the current icon that the user chose
-                localStorage.setItem('selected-theme', getCurrentTheme())
-                localStorage.setItem('selected-icon', getCurrentIcon())
-
-            })
-            /*==================== CHANGE BACKGROUND HEADER ====================*/
-            function scrollHeader(){
-                const header = document.getElementById('header')
-                // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
-                if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-            }
-            window.addEventListener('scroll', scrollHeader)
-
-             // ====================== Translate =============================
-             function googleTranslateElementInit() {
-                 new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-             }
-
-        </script>
+      // Activate / deactivate the theme manually with the button
+      themeButton.addEventListener("click", () => {
+        // Add or remove the dark / icon theme
+        document.body.classList.toggle(darkTheme);
+        themeButton.classList.toggle(iconTheme);
+        // We save the theme and the current icon that the user chose
+        localStorage.setItem("selected-theme", getCurrentTheme());
+        localStorage.setItem("selected-icon", getCurrentIcon());
+      });
+      /*==================== CHANGE BACKGROUND HEADER ====================*/
+      function scrollHeader() {
+        const header = document.getElementById("header");
+        // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
+        if (this.scrollY >= 50) header.classList.add("scroll-header");
+        else header.classList.remove("scroll-header");
+      }
+      window.addEventListener("scroll", scrollHeader);
+    </script>
 
     <!--=================================== SCROLL REVEAL=================================-->
     <script src="./assest/Js/scrollreveal.min.js"></script>
@@ -362,13 +400,11 @@
     <script src="./assest/Js/swiper-bundle.min.js"></script>
 
     <!-- ===================================  Translate  ================================ -->
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- =================================== Bootstrap ==================================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- ===================================  MAIN JS  ================================== -->
     <!-- <script src="./assest/Js/main.js"></script> -->
-
-</body>
+  </body>
 </html>

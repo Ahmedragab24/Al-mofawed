@@ -122,6 +122,7 @@ html {
 
 body {
   /* margin: var(--header-height) 0 0 0; */
+  background: linear-gradient(to right, #c5796d, #e6c7b3);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -131,6 +132,9 @@ body {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+}
+.dark-theme {
+  background: linear-gradient(to right, #c5796d, #6e5747) !important;
 }
 
 h1,
@@ -203,6 +207,7 @@ input {
 
 /*=============== HEADER ===============*/
 .header {
+  background: linear-gradient(to right, #c5796d, #e6c7b3);
   width: 100%;
   position: fixed;
   top: 0;
@@ -211,8 +216,12 @@ input {
   background-color: transparent;
   transition: 1s;
 }
+.dark-theme .header {
+  background: linear-gradient(to right, #c5796d, #6e5747);
+}
 
 /*=============== NAV ===============*/
+
 .nav {
   height: var(--header-height);
   display: flex;
@@ -257,6 +266,7 @@ input {
 
 @media screen and (max-width: 767px) {
   .nav__menu {
+    background: linear-gradient(to right, #c5796d, #e6c7b3);
     position: fixed;
     background-color: var(--body-color);
     top: 0;
@@ -273,6 +283,9 @@ input {
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
+  }
+  .dark-theme .nav__menu {
+    background: linear-gradient(to right, #c5796d, #6e5747);
   }
 }
 
@@ -537,7 +550,12 @@ input {
 
 /*=============== ABOUT ===============*/
 .about {
-  margin-block: 6rem;
+  /* height: 100vh; */
+  margin-top: 6rem;
+  background: linear-gradient(to right, #c5796d, #e6c7b3);
+}
+.dark-theme .about {
+  background: linear-gradient(to right, #c5796d, #6e5747);
 }
 
 .about__data {
@@ -1099,7 +1117,7 @@ input {
 }
 
 .dark-theme .contact--form-input {
-  border: 2px solid var(--first-color-light);
+  border: 2px solid var(--first-color);
 }
 
 .contact--form-tag {
@@ -1108,13 +1126,20 @@ input {
   left: 1.25rem;
   font-size: var(--smaller-font-size);
   padding: 0.25rem;
-  background-color: var(--body-color);
+  color: var(--title-color);
+  background-color: var(--first-color);
+  border: 1px solid var(--first-color);
   z-index: 10;
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -ms-transition: 0.2s;
   -o-transition: 0.2s;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .contact--form-area {
